@@ -15,6 +15,7 @@ namespace EjemProyect
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddSingleton<ServicesDemo>();
+            builder.Services.AddAutoMapper(typeof(Program));
 
             var app = builder.Build();
 
